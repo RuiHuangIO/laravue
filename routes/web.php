@@ -12,19 +12,19 @@
  */
 
 Route::get('/', function () {
-	return view('welcome');
+	return view('pages.home');
 });
 
-Route::get('/test1', function () {
-	return view('pages.test1');
-})->name('test-1');
+Route::get('/about', function () {
+	return view('pages.about');
+})->name('about-page');
 
-Route::get('/test2', function () {
-	return view('pages.test2');
+Route::get('/blog', function () {
+	return view('pages.blog');
 });
 
-Route::get('/test3', function () {
-	return view('pages.test3');
+Route::get('/contact', function () {
+	return view('pages.contact');
 });
 
 

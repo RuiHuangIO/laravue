@@ -1,5 +1,6 @@
 <div class="links">
-  <a href="{{route('test-1')}}">Test1</a>
-  <a href="/test2">Test2</a>
-  <a href="/test3">Test3</a>
+  <a href="/">Home</a>
+  <a href="{{route('about-page')}}">About</a>
+  <a href="/blog">Blog</a>
+  <a href="/contact">Contact</a>
 </div>
