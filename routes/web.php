@@ -11,20 +11,9 @@
 |
  */
 
-Route::get('/', function () {
-	return view('pages.home');
-});
-
-Route::get('/about', function () {
-	return view('pages.about');
-})->name('about-page');
-
-Route::get('/blog', function () {
-	return view('pages.blog');
-});
-
-Route::get('/contact', function () {
-	return view('pages.contact');
-});
+Route::get('/', 'FrontendController@page')->name('page');
+Route::get('/about', 'FrontendController@page')->name('about');
+Route::get('/blog', 'FrontendController@page')->name('blog');
+Route::get('/contact', 'FrontendController@page')->name('contact');
 
 
